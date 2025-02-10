@@ -1,0 +1,24 @@
+ 
+# Chặn các file log
+*.log
+
+# Chặn các file tạm thời
+*.tmp
+
+# Chặn các file backup
+*.bak
+
+# Chặn thư mục node_modules
+node_modules/
+
+# Chặn các thông tin từ file json
+*.json
+
+# Chăn cac file test
+test
+
+#Chan cac file config
+config
+
+# Chan cac file moi truong
+.env

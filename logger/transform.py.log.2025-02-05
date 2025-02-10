@@ -1,0 +1,39 @@
+[2025-02-05 17:05:42,059][ops.py:27][INFO] Query executed successfully: SELECT count(*) FROM TEST_LINEAGE_ACCOUNT where ROWNUM <= 100
+[2025-02-05 17:28:13,641][ops.py:47][ERROR] Error executing non-query: 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:30:21,854][ops.py:30][ERROR] Error executing query: 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:32:14,821][ops.py:141][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:32:29,369][ops.py:30][ERROR] Error executing query: 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:41:40,057][ops.py:47][ERROR] Error executing non-query: 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:41:46,389][ops.py:131][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:46:44,408][ops.py:47][ERROR] Error executing non-query: 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:47:09,209][ops.py:47][ERROR] Error executing non-query: ORA-00922: missing or invalid option
+[2025-02-05 17:47:16,787][ops.py:131][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': expecting string or bytes object
+[2025-02-05 17:47:18,683][ops.py:30][ERROR] Error executing query: 'RepoLineage' object has no attribute 'cursor'
+[2025-02-05 17:47:22,945][ops.py:30][ERROR] Error executing query: ORA-00942: table or view does not exist
+[2025-02-05 17:48:48,902][ops.py:47][ERROR] Error executing non-query: ORA-00922: missing or invalid option
+[2025-02-05 17:52:54,183][ops.py:47][ERROR] Error executing non-query: ORA-00922: missing or invalid option
+[2025-02-05 18:21:37,572][ops.py:45][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_EXPORT" ("Table_name" VARCHAR2(255), "Type" VARCHAR2(255), "SourcePath" VARCHAR2(256), "TargetPath" VARCHAR2(256), "SourceColumnName" VARCHAR2(255), "SourceColumnType" VARCHAR2(255), "TargetColumnName" VARCHAR2(255), "TargetColumnType" VARCHAR2(255), "SourceObjectName" VARCHAR2(255), "SourceObjectType" VARCHAR2(255), "TargetObjectName" VARCHAR2(255), "TargetObjectType" VARCHAR2(255), "SourceGroupName" VARCHAR2(255), "SourceGroupType" VARCHAR2(255), "TargetGroupName" VARCHAR2(255), "TargetGroupType" VARCHAR2(255), "SourceResourceName" VARCHAR2(255), "SourceResourceType" VARCHAR2(255), "TargetResourceName" VARCHAR2(255), "TargetResourceType" VARCHAR2(255), "RevisionState" VARCHAR2(50), "Update_time" TIMESTAMP)
+[2025-02-05 18:21:59,084][ops.py:128][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': expecting string or bytes object
+[2025-02-05 18:24:32,353][ops.py:128][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': expecting string or bytes object
+[2025-02-05 18:28:40,280][ops.py:135][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': name 'np' is not defined
+[2025-02-05 18:28:43,891][ops.py:27][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT
+[2025-02-05 18:29:28,801][ops.py:135][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': name 'np' is not defined
+[2025-02-05 18:29:30,419][ops.py:27][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT
+[2025-02-05 18:30:59,286][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-05 18:30:59,439][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "TABLE_NAME": invalid identifier
+[2025-02-05 18:30:59,461][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT
+[2025-02-05 18:32:09,253][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-05 18:32:09,408][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "TABLE_NAME": invalid identifier
+[2025-02-05 18:32:09,434][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT
+[2025-02-05 18:33:23,722][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-05 18:33:23,867][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "ID": invalid identifier
+[2025-02-05 18:33:23,897][ops.py:31][ERROR] Error executing query: ORA-00933: SQL command not properly ended
+[2025-02-05 18:38:00,955][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-05 18:38:02,030][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-01843: not a valid month
+[2025-02-05 18:38:02,074][ops.py:31][ERROR] Error executing query: ORA-00933: SQL command not properly ended
+[2025-02-05 18:38:10,369][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-05 18:38:10,514][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-01843: not a valid month
+[2025-02-05 18:38:10,537][ops.py:31][ERROR] Error executing query: ORA-00933: SQL command not properly ended
+[2025-02-05 18:45:11,510][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-05 18:45:11,646][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': expecting string or bytes object
+[2025-02-05 18:45:11,683][ops.py:31][ERROR] Error executing query: ORA-00933: SQL command not properly ended

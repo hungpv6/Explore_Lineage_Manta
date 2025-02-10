@@ -1,0 +1,140 @@
+def process_lineage_data(self, lineage_data):
+        # Check if input is a DataFrame and convert if necessary
+        if isinstance(lineage_data, pd.DataFrame):
+            lineage_data = lineage_data.to_dict(orient='records')
+        
+        # Validate input
+        if not lineage_data or not isinstance(lineage_data, list):
+            self.lineage_manta_object_logger.error("Invalid lineage data format")
+            return []
+
+        # Ensure 'ID' column exists and is convertible to a numeric type
+        try:
+            for item in lineage_data:
+                item['ID'] = pd.to_numeric(item['ID'], errors='coerce')
+            lineage_data = [item for item in lineage_data if pd.notna(item['ID'])]
+        except KeyError:
+            self.lineage_manta_object_logger.error("'ID' column not found in lineage data")
+            return []
+
+        # Create a graph representation
+        graph = self.build_graph(lineage_data)
+        lineage_result = []
+        bitmap = [0] * len(lineage_data)  # Initialize bitmap for visited nodes
+
+        # Perform DFS for each node
+        for index, item in enumerate(lineage_data):
+            if bitmap[index] == 0:  # If not visited
+                self.dfs(item['ID'], graph, bitmap, lineage_result, 0, lineage_data)
+
+        self.exploit_lineage_manta.info("Processing completed successfully.")
+        return lineage_result
+
+    def build_graph(self, lineage_data):
+        graph = {}
+        for item in lineage_data:
+            source = item[LINEAGE_SOURCE]
+            target = item[LINEAGE_TARGET]
+            if source not in graph:
+                graph[source] = []
+            graph[source].append(target)
+        return graph
+
+    def dfs(self, node_id, graph, bitmap, lineage_result, step, lineage_data):
+        # Find the record corresponding to the node_id
+        record = next((item for item in lineage_data if item['ID'] == node_id), None)
+        if record is None:
+            return
+
+        # Mark the node as visited
+        index = lineage_data.index(record)
+        bitmap[index] = 1
+
+        # Create lineage record
+        lineage_result.append(self.create_lineage_record(step, node_id, record))
+
+        # Explore neighbors
+        if record[LINEAGE_SOURCE] in graph:
+            for neighbor in graph[record[LINEAGE_SOURCE]]:
+                # Find the neighbor's ID
+                neighbor_record = next((item for item in lineage_data if item[LINEAGE_TARGET] == neighbor), None)
+                if neighbor_record and bitmap[lineage_data.index(neighbor_record)] == 0:
+                    self.dfs(neighbor_record['ID'], graph, bitmap, lineage_result, step + 1, lineage_data)
+
+    def create_lineage_record(self, step, root_id, record):
+        return {
+            'STEP': step,
+            'ROOT_ID': root_id,
+            'ID_FLOW': str(root_id),
+            'SOURCEPATH': record[LINEAGE_SOURCE],
+            'TARGETPATH': record[LINEAGE_TARGET],
+            'FULL_FLOW': f"{record[LINEAGE_SOURCE]} ==> {record[LINEAGE_TARGET]}"
+        }
+
+//////////////////////////////////////
+/////////////////////////////////////
+
+
+# data = []
+
+# # Duyệt qua từng danh sách trong graph
+# for item_list in graph:   
+#     root_id = item_list[0][1]  # Lấy Root_ID từ item_list
+#     seen_nodes = set()  # Tập hợp để theo dõi các node đã thấy
+
+#     for index, item in enumerate(item_list):
+#         flow = f'{item[1]}' if item[2] is None else f'{item[1]},{item[2]}'
+        
+#         if index == 0:
+#             # Xử lý root node
+#             data.append([root_id, item[0], flow])
+#             seen_nodes.add(item[1])  # Thêm node vào tập hợp
+#         else:
+#             # Xử lý các node khác
+#             if item[2] not in seen_nodes:  # Kiểm tra xem node đã thấy chưa
+#                 data.append([root_id, item[0], flow])
+#                 seen_nodes.add(item[2])  # Thêm node vào tập hợp
+
+# # Tạo DataFrame từ danh sách dữ liệu
+# df_graph = pd.DataFrame(data, columns=['Root_ID', 'Step', 'Flow'])
+
+# # Loại bỏ các dòng trùng lặp
+# df_graph = df_graph.drop_duplicates(subset=['Root_ID', 'Step', 'Flow']).sort_values(['Root_ID', 'Step'])
+
+# # Tùy chọn: Thiết lập hiển thị để xem tất cả các hàng
+# pd.set_option('display.max_rows', None)
+
+# # # In ra DataFrame
+# # print(df_graph)
+
+# def unpivoted_column(table, column_unpivoted, change_column_data_type=int, character_split = ','):
+#     # Kiểm tra xem column_unpivoted có phải là chuỗi không
+#     if isinstance(column_unpivoted, str):
+#         # Tạo cột gốc cho các giá trị ban đầu
+#         table[f'{column_unpivoted}_original'] = table[column_unpivoted].str.split(character_split)
+#         df_unpivoted = table.explode(f'{column_unpivoted}_original', ignore_index=True).reset_index(drop=True)
+#         df_unpivoted['Node'] = df_unpivoted[f'{column_unpivoted}_original'].astype(change_column_data_type)
+#         df_unpivoted.drop(columns=[f'{column_unpivoted}_original'], inplace=True)
+#         return df_unpivoted
+
+# # Gọi hàm unpivoted_column
+# df_unpivoted = unpivoted_column(df_graph, 'Flow')
+# # print(df_unpivoted)
+
+# for index, row in df_unpivoted.iterrows():
+#     item = row['Node']
+#     if item in dictionary:
+#         df_unpivoted.at[index, LINEAGE_SOURCE] = dictionary[item][SOURCE_NAME]
+#         df_unpivoted.at[index, LINEAGE_TARGET] = dictionary[item][TARGET_NAME]
+#         if len(row['Flow'].split(',')) == 2:
+#             Node1 = int(row['Flow'].split(',')[0])
+#             Node2 = int(row['Flow'].split(',')[1])
+#             df_unpivoted.at[index, 'Flow_implement'] = f'{dictionary[Node1][SOURCE_NAME]},{dictionary[Node1][TARGET_NAME]},{dictionary[Node2][SOURCE_NAME]}'
+#             # print(f'{dictionary[Node1][SOURCE_NAME]},{dictionary[Node1][TARGET_NAME]},{dictionary[Node2][SOURCE_NAME]}')
+#         else:
+#             df_unpivoted.at[index, 'Flow_implement'] = f'{dictionary[item][SOURCE_NAME]},{dictionary[item][TARGET_NAME]}'
+
+# df_transformed = pd.melt(df_unpivoted, id_vars=['Root_ID', 'Step', 'Flow', 'Flow_implement', 'Node'], value_vars=['SourcePath', 'TargetPath'], var_name='Type', value_name='Raw_Node')
+
+# # Xóa cột 'Type' nếu không cần thiết
+# df_transformed.drop(columns=['Type'], inplace=True)

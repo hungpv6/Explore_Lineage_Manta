@@ -1,0 +1,1 @@
+from .hash_and_linklist.algo import HashTable, Node, Trie, TrieNode

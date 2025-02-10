@@ -1,0 +1,19 @@
+[2025-02-04 08:34:32,617][lineage_manta_implement.py:76][ERROR] Error in deploy_lineage_manta: 3 columns passed, passed data had 8 columns
+[2025-02-04 08:36:53,125][lineage_manta_implement.py:76][ERROR] Error in deploy_lineage_manta: 4 columns passed, passed data had 8 columns
+[2025-02-04 08:37:44,308][lineage_manta_implement.py:76][ERROR] Error in deploy_lineage_manta: 4 columns passed, passed data had 8 columns
+[2025-02-04 08:56:27,781][lineage_manta_implement.py:76][ERROR] Error in deploy_lineage_manta: unhashable type: 'list'
+[2025-02-04 09:01:20,437][lineage_manta_implement.py:76][ERROR] Error in deploy_lineage_manta: unhashable type: 'list'
+[2025-02-04 09:14:13,295][lineage_manta_implement.py:216][ERROR] Error in update_dataframe_with_dictionary: '1'
+[2025-02-04 09:14:44,474][lineage_manta_implement.py:216][ERROR] Error in update_dataframe_with_dictionary: '1'
+[2025-02-04 09:40:54,728][lineage_manta_implement.py:224][ERROR] Error in update_dataframe_with_dictionary: '1'
+[2025-02-04 09:42:58,430][lineage_manta_implement.py:222][ERROR] Error in update_dataframe_with_dictionary: '1'
+[2025-02-04 10:26:59,997][lineage_manta_implement.py:103][ERROR] Error in deploy_lineage_manta: Index(['Flow', 'Node', 'Root_ID', 'Step_Node'], dtype='object')
+[2025-02-04 10:28:25,278][lineage_manta_implement.py:103][ERROR] Error in deploy_lineage_manta: Index(['Flow', 'Node', 'Root_ID', 'Step_Node'], dtype='object')
+[2025-02-04 10:34:54,510][lineage_manta_implement.py:244][ERROR] Error in transform_dataframe: Index(['Flow', 'Node', 'Root_ID', 'Step_Node'], dtype='object')
+[2025-02-04 10:44:54,353][lineage_manta_implement.py:109][ERROR] Error in deploy_lineage_manta: 'NoneType' object has no attribute 'drop_duplicates'
+[2025-02-04 10:46:10,314][lineage_manta_implement.py:109][ERROR] Error in deploy_lineage_manta: 'NoneType' object has no attribute 'drop_duplicates'
+[2025-02-04 10:56:06,682][lineage_manta_implement.py:109][ERROR] Error in deploy_lineage_manta: 'NoneType' object has no attribute 'drop_duplicates'
+[2025-02-04 10:57:59,423][lineage_manta_implement.py:109][ERROR] Error in deploy_lineage_manta: 'NoneType' object has no attribute 'drop_duplicates'
+[2025-02-04 15:33:07,578][lineage_manta_implement.py:120][ERROR] Error in deploy_lineage_manta: filter_table_from_object_type() got multiple values for argument 'table_filter'
+[2025-02-04 15:34:27,738][lineage_manta_implement.py:120][ERROR] Error in deploy_lineage_manta: filter_table_from_object_type() got multiple values for argument 'table_filter'
+[2025-02-04 15:35:01,301][lineage_manta_implement.py:120][ERROR] Error in deploy_lineage_manta: filter_table_from_object_type() got multiple values for argument 'table_filter'

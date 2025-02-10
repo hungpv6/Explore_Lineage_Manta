@@ -1,0 +1,11 @@
+[2025-02-04 11:21:19,636][load_and_pre_transform.py:53][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/Practice/test.csv
+[2025-02-04 15:08:24,999][load_and_pre_transform.py:53][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/Practice/test.csv
+[2025-02-04 15:11:21,771][load_and_pre_transform.py:56][ERROR] Error exporting data to CSV: [Errno 13] Permission denied: 'C:/Users/hungpv6/Downloads/Practice/test.csv'
+[2025-02-04 15:16:02,514][load_and_pre_transform.py:56][ERROR] Error exporting data to CSV: [Errno 13] Permission denied: 'C:/Users/hungpv6/Downloads/Practice/test.csv'
+[2025-02-04 15:19:01,382][load_and_pre_transform.py:53][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/Practice/test.csv
+[2025-02-04 15:20:42,351][load_and_pre_transform.py:53][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/Practice/test.csv
+[2025-02-04 15:22:51,268][load_and_pre_transform.py:53][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/Practice/test.csv
+[2025-02-04 15:33:07,610][load_and_pre_transform.py:56][ERROR] Error exporting data to CSV: 'list' object has no attribute 'to_csv'
+[2025-02-04 15:34:27,779][load_and_pre_transform.py:56][ERROR] Error exporting data to CSV: 'list' object has no attribute 'to_csv'
+[2025-02-04 15:36:21,946][load_and_pre_transform.py:53][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/Practice/test.csv
+[2025-02-04 15:38:10,128][load_and_pre_transform.py:53][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/Practice/test.csv

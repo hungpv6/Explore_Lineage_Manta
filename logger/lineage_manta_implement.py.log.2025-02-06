@@ -1,0 +1,4 @@
+[2025-02-06 09:56:18,167][lineage_manta_implement.py:126][ERROR] Error in deploy_lineage_manta: module 'datetime' has no attribute 'now'
+[2025-02-06 09:57:34,325][lineage_manta_implement.py:126][ERROR] Error in deploy_lineage_manta: module 'datetime' has no attribute 'now'
+[2025-02-06 09:58:45,838][lineage_manta_implement.py:126][ERROR] Error in deploy_lineage_manta: module 'datetime' has no attribute 'now'
+[2025-02-06 09:59:58,308][lineage_manta_implement.py:126][ERROR] Error in deploy_lineage_manta: module 'datetime' has no attribute 'now'

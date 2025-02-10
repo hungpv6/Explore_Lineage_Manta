@@ -1,0 +1,6 @@
+[2025-01-23 05:11:39,652][load_and_pre_transform.py:20][ERROR] Error reading data from file: [Errno 2] No such file or directory: 'C:/Users/Admin/Downloads/relations_ACCOUNT.csv'
+[2025-01-23 07:42:44,640][load_and_pre_transform.py:20][ERROR] Error reading data from file: [Errno 2] No such file or directory: 'C:/Users/hungpv6/Downloads/Practice/relations.csv'
+[2025-01-23 07:43:43,959][load_and_pre_transform.py:20][ERROR] Error reading data from file: [Errno 2] No such file or directory: 'C:/Users/hungpv6/Downloads/Practice/relations.csv'
+[2025-01-28 19:53:18,060][load_and_pre_transform.py:20][ERROR] Error reading data from file: [Errno 2] No such file or directory: 'C:/Users/hungpv6/Downloads/Practice/relations_ACCOUNT.csv'
+[2025-01-28 19:55:16,074][load_and_pre_transform.py:20][ERROR] Error reading data from file: [Errno 2] No such file or directory: 'C:/Users/hungpv6/Downloads/Practice/relations_ACCOUNT.csv'
+[2025-01-28 20:00:46,574][load_and_pre_transform.py:20][ERROR] Error reading data from file: [Errno 2] No such file or directory: 'C:/Users/hungpv6/Downloads/Practice/relations_ACCOUNT.csv'
