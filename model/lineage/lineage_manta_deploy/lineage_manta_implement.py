@@ -102,12 +102,12 @@ class LineageMantaObject(LineageManta):
                                                                         flow_name = flow_name, 
                                                                         flow_implement_raw = flow_implement_raw)
             
-            df_transformed = self.transform_dataframe(df = df_update_dataframe, 
+            df_transformed = self.unpivoted_dataframe(df = df_update_dataframe, 
                                                       id_vars = id_vars, 
                                                       value_vars = value_vars, 
                                                       Raw_Node_column_name = Raw_Node_column_name)
             if remove_duplicate_columns is not None:
-                df_transformed.drop_duplicates(subset = remove_duplicate_columns).reset_index(drop=True)
+                df_transformed.drop_duplicates(subset = columns_name).reset_index(drop=True)
 
             if select_columns is not None:
                 df_transformed = df_transformed[select_columns]
@@ -154,7 +154,7 @@ class LineageMantaObjectOptimize(LineageMantaOptimize):
                              character_split = ',',
                              remove_duplicate_columns = ['Flow_implement_raw', 'Raw_Node'],
                              select_columns = ['Flow_implement_raw', 'Raw_Node'],
-                             filter_object_type_list = ['Table','View','PLSQL'],
+                             filter_object_type_list = ['Table','View'],
                              value_object_type_name = 'ValueObjectType',
                              sort_by = None):
         """
@@ -186,10 +186,35 @@ class LineageMantaObjectOptimize(LineageMantaOptimize):
         """
         try:
            
-            graph = self.process_lineage(combo_list_copy = combo_list_copy, 
+            graph = self.process_lineage_op(combo_list_copy = combo_list_copy, 
                                          dictionary = dictionary, 
                                          adjacency_list = adjacency_list)
-            return graph
+            
+            df_graph = self.create_dataframe_from_graph_optimize(graph = graph, 
+                                                        columns_name = columns_name, 
+                                                        character_split = character_split,
+                                                        sort_by = sort_by)
+            
+            df_update_dataframe = self.update_dataframe_with_dictionary_optimize(df = df_graph, 
+                                                                        dictionary = dictionary, 
+                                                                        character_split = character_split, 
+                                                                        node_name = node_name, 
+                                                                        flow_name = flow_name, 
+                                                                        flow_implement_raw = flow_implement_raw)
+            
+            df_transformed = self.unpivoted_dataframe(df = df_update_dataframe, 
+                                                      id_vars = id_vars, 
+                                                      value_vars = value_vars, 
+                                                      Raw_Node_column_name = Raw_Node_column_name)
+            df_transformed = df_transformed[select_columns]
+            object_node_dict = self.filter_object_dict_optimized(df=df_raw, source_col=source_col, target_col=target_col)
+            table_filter_ = self.filter_table_from_object_type_optimized(table_filter = df_transformed, 
+                                                               column_filter=Raw_Node_column_name, 
+                                                               filter_object_type_list=filter_object_type_list, object_node_dict=object_node_dict, value_object_type_name = value_object_type_name)
+
+        
+            return table_filter_.drop_duplicates(subset = remove_duplicate_columns).reset_index(drop=True)
+        
         except Exception as e:
             self.logger_lineage_manta_optimize.error(f"Error in deploy_lineage_manta: {e}")
             return []

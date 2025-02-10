@@ -162,30 +162,7 @@ class HashTable:
 
 
 
-class TrieNode:
-    def __init__(self):
-        self.children = {}
-        self.is_end = False
 
-class Trie:
-    def __init__(self):
-        self.root = TrieNode()
-
-    def insert(self, path):
-        node = self.root
-        for step in path:
-            if step not in node.children:
-                node.children[step] = TrieNode()
-            node = node.children[step]
-        node.is_end = True
-
-    def is_subset(self, path):
-        node = self.root
-        for step in path:
-            if step not in node.children:
-                return False
-            node = node.children[step]
-        return node.is_end
 
 
 

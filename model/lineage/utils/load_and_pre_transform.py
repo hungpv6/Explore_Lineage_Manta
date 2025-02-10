@@ -176,20 +176,26 @@ class PreProcessingData:
             self.logger_data_service.error(f"Error exporting data to CSV: {e}")
     
     def remove_subsets_trie(self, paths):
+        """
+        Loại bỏ các path là tập con của path khác sử dụng Trie để tối ưu.
+        """
         try:
+            paths = sorted(paths, key=len)  # Đảm bảo đường đi ngắn hơn được xét trước
             trie = Trie()
-            paths = sorted(paths, key=len)  # Sắp xếp từ ngắn đến dài
             filtered_paths = []
 
             for path in paths:
-                if not trie.is_subset(path):  # Chỉ chèn nếu không phải tập con
-                    trie.insert(path)
+                self.logger_data_service.info(f"Processing path: {path}")
+                if not trie.is_prefix(path):  # Nếu chưa có trong Trie thì giữ lại
                     filtered_paths.append(path)
+                    trie.insert(path)  # Thêm vào Trie để kiểm tra nhanh hơn
+                    self.logger_data_service.info(f"Added path to Trie: Trie {trie}")
+                    self.logger_data_service.info(f"Filtered paths: {filtered_paths}")
 
             return filtered_paths
         except Exception as e:
             self.logger_data_service.error(f"Error removing subsets: {e}")
-    
+
     def estimate_table_size(self, file_path=None, df=None, table_sql=None, connection=None):
         """
         Đọc file hoặc bảng SQL để ước lượng kích thước bảng hash.

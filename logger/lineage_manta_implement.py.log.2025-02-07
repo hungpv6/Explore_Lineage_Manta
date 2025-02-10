@@ -1,0 +1,70 @@
+[2025-02-07 13:57:00,146][lineage_manta_implement.py:126][ERROR] Error in deploy_lineage_manta: 'NoneType' object has no attribute 'drop_duplicates'
+[2025-02-07 14:25:39,907][lineage_exploit.py:601][INFO] Optimized table described in 0 seconds
+[2025-02-07 14:25:44,502][lineage_exploit.py:632][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 14:25:47,478][lineage_exploit.py:666][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 14:28:18,420][lineage_exploit.py:601][INFO] Optimized table described in 0 seconds
+[2025-02-07 14:28:22,924][lineage_exploit.py:632][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-07 14:28:25,766][lineage_exploit.py:666][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 14:32:21,888][lineage_exploit.py:602][INFO] Optimized table described in 0 seconds
+[2025-02-07 14:32:26,547][lineage_exploit.py:633][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 14:32:29,443][lineage_exploit.py:667][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 14:40:32,380][lineage_exploit.py:603][INFO] Optimized table described in 0 seconds
+[2025-02-07 14:40:37,108][lineage_exploit.py:634][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 14:40:39,971][lineage_exploit.py:668][WARNING] Time to build adjacency list: 2 seconds
+[2025-02-07 14:49:41,108][lineage_exploit.py:603][INFO] Optimized table described in 1 seconds
+[2025-02-07 14:49:45,866][lineage_exploit.py:634][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-07 14:49:48,673][lineage_exploit.py:668][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 14:53:30,700][lineage_exploit.py:618][INFO] Optimized table described in 0 seconds
+[2025-02-07 14:53:35,353][lineage_exploit.py:649][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 14:53:38,214][lineage_exploit.py:683][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 15:14:20,413][lineage_exploit.py:623][INFO] Optimized table described in 0 seconds
+[2025-02-07 15:14:24,937][lineage_exploit.py:654][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-07 15:14:27,726][lineage_exploit.py:688][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 15:31:42,854][lineage_exploit.py:624][INFO] Optimized table described in 0 seconds
+[2025-02-07 15:31:47,505][lineage_exploit.py:655][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 15:31:50,415][lineage_exploit.py:689][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 15:32:31,232][lineage_exploit.py:624][INFO] Optimized table described in 0 seconds
+[2025-02-07 15:32:36,490][lineage_exploit.py:655][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 15:32:39,762][lineage_exploit.py:689][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 15:48:23,347][lineage_exploit.py:620][INFO] Optimized table described in 0 seconds
+[2025-02-07 15:48:23,368][lineage_exploit.py:655][ERROR] Error: 'LineageMantaObjectOptimize' object has no attribute 'endswith'
+[2025-02-07 15:48:23,368][lineage_exploit.py:691][ERROR] Error: object of type 'NoneType' has no len()
+[2025-02-07 15:51:54,261][lineage_exploit.py:620][INFO] Optimized table described in 0 seconds
+[2025-02-07 15:51:59,134][lineage_exploit.py:651][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 15:52:02,057][lineage_exploit.py:685][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 15:56:41,758][lineage_exploit.py:620][INFO] Optimized table described in 0 seconds
+[2025-02-07 15:56:46,280][lineage_exploit.py:651][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 15:56:49,096][lineage_exploit.py:685][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:00:00,770][lineage_exploit.py:620][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:00:05,327][lineage_exploit.py:651][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 16:00:08,159][lineage_exploit.py:685][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:09:33,827][lineage_exploit.py:621][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:09:38,534][lineage_exploit.py:652][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 16:09:41,356][lineage_exploit.py:686][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:19:51,308][lineage_exploit.py:621][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:19:55,922][lineage_exploit.py:652][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-07 16:19:58,727][lineage_exploit.py:686][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:20:43,639][lineage_exploit.py:621][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:20:48,503][lineage_exploit.py:652][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 16:20:51,441][lineage_exploit.py:686][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:22:26,348][lineage_exploit.py:621][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:22:31,468][lineage_exploit.py:652][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 16:22:34,573][lineage_exploit.py:686][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:26:51,939][lineage_exploit.py:621][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:26:56,841][lineage_exploit.py:652][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 16:26:59,656][lineage_exploit.py:686][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:35:59,134][lineage_exploit.py:621][INFO] Optimized table described in 1 seconds
+[2025-02-07 16:36:03,811][lineage_exploit.py:652][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-07 16:36:06,687][lineage_exploit.py:686][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:37:45,998][lineage_exploit.py:622][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:37:50,732][lineage_exploit.py:653][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-07 16:37:53,576][lineage_exploit.py:687][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 16:48:35,336][lineage_exploit.py:622][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:48:40,139][lineage_exploit.py:653][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 16:48:42,979][lineage_exploit.py:687][WARNING] Time to build adjacency list: 2 seconds
+[2025-02-07 16:50:27,144][lineage_exploit.py:623][INFO] Optimized table described in 0 seconds
+[2025-02-07 16:50:31,870][lineage_exploit.py:654][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-07 16:50:34,733][lineage_exploit.py:688][WARNING] Time to build adjacency list: 3 seconds
+[2025-02-07 17:00:23,759][lineage_exploit.py:599][INFO] Optimized table described in 0 seconds
+[2025-02-07 17:00:28,372][lineage_exploit.py:630][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-07 17:00:31,201][lineage_exploit.py:664][WARNING] Time to build adjacency list: 3 seconds

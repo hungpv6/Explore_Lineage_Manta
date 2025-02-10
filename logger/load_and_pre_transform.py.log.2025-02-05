@@ -1,0 +1,13 @@
+[2025-02-05 13:08:06,172][load_and_pre_transform.py:38][ERROR] Error reading data from file: [Errno 2] No such file or directory: 'C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_filerelations_ACCOUNT.csv'
+[2025-02-05 14:18:07,812][load_and_pre_transform.py:38][ERROR] Error reading data from file: [Errno 2] No such file or directory: "C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/dict_values(['relations_ACCOUNT']).csv"
+[2025-02-05 14:18:07,823][load_and_pre_transform.py:59][ERROR] Error adding name of table column: 'NoneType' object does not support item assignment
+[2025-02-05 14:19:49,842][load_and_pre_transform.py:38][ERROR] Error reading data from file: [Errno 2] No such file or directory: "C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/dict_values(['relations_ACCOUNT']).csv"
+[2025-02-05 14:19:49,853][load_and_pre_transform.py:59][ERROR] Error adding name of table column: 'NoneType' object does not support item assignment
+[2025-02-05 14:21:26,734][load_and_pre_transform.py:38][ERROR] Error reading data from file: [Errno 2] No such file or directory: "C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/dict_values(['relations_ACCOUNT']).csv"
+[2025-02-05 14:21:26,746][load_and_pre_transform.py:59][ERROR] Error adding name of table column: 'NoneType' object does not support item assignment
+[2025-02-05 14:45:25,426][load_and_pre_transform.py:171][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/test_DEV.csv
+[2025-02-05 15:28:37,278][load_and_pre_transform.py:171][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/test_DEV.csv
+[2025-02-05 15:33:37,122][load_and_pre_transform.py:171][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/test_DEV.csv
+[2025-02-05 15:34:49,436][load_and_pre_transform.py:171][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/test_DEV.csv
+[2025-02-05 15:44:18,883][load_and_pre_transform.py:171][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/test_DEV.csv
+[2025-02-05 15:47:45,717][load_and_pre_transform.py:171][INFO] Data successfully exported to C:/Users/hungpv6/Downloads/manta_data_file/linage_manta_export_file/test_DEV.csv
