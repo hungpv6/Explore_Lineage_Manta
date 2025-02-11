@@ -34,7 +34,7 @@ class PreProcessingData:
         :rtype: pd.DataFrame or None
         """
         try:
-            df = pd.read_csv(file_path)
+            df = pd.read_csv(file_path, header=0)
             return df
         except Exception as e:
             self.logger_data_service.error(f"Error reading data from file: {e}")
@@ -61,7 +61,7 @@ class PreProcessingData:
             self.logger_data_service.error(f"Error adding name of table column: {e}")
             return df
     
-    def concat_multi_dataframe(self, dataframes, concat_type = 'vertical', ignore_index=True):
+    def concat_multi_dataframe(self, dataframes, concat_type = 'vertical', ignore_index=False):
         """
         Concatenates multiple DataFrames into one.
 
@@ -83,6 +83,7 @@ class PreProcessingData:
         """
         try:
             if concat_type == 'vertical':
+
                 df_concat = pd.concat(dataframes, axis = 0, ignore_index=ignore_index)
             elif concat_type == 'horizontal':
                 df_concat = pd.concat(dataframes, axis = 1, ignore_index=ignore_index)

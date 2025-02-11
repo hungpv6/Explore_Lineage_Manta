@@ -1,0 +1,82 @@
+[2025-02-06 08:04:34,619][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:04:38,161][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': expecting string or bytes object
+[2025-02-06 08:04:39,932][ops.py:31][ERROR] Error executing query: ORA-00933: SQL command not properly ended
+[2025-02-06 08:13:50,603][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:14:01,995][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:14:31,492][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:15:47,436][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:15:47,687][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "UPDATE_TIME": invalid identifier
+[2025-02-06 08:15:47,752][ops.py:31][ERROR] Error executing query: ORA-00904: "ROW_NUM": invalid identifier
+[2025-02-06 08:33:59,681][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:33:59,848][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "UPDATE_TIME": invalid identifier
+[2025-02-06 08:33:59,914][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 08:38:48,834][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "UPDATE_TIME": invalid identifier
+[2025-02-06 08:55:46,363][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:55:46,545][ops.py:132][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "UPDATE_TIME": invalid identifier
+[2025-02-06 08:55:46,569][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 08:57:50,102][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 08:57:50,272][ops.py:132][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "UPDATE_TIME": invalid identifier
+[2025-02-06 08:57:50,305][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 09:00:10,366][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 09:00:10,856][ops.py:132][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "UPDATE_TIME": invalid identifier
+[2025-02-06 09:00:10,901][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 09:01:07,071][ops.py:46][INFO] Non-query executed successfully: DROP TABLE DG_MANTA_LINEAGE_EXPORT
+[2025-02-06 09:01:17,345][ops.py:31][ERROR] Error executing query: ORA-00942: table or view does not exist
+[2025-02-06 09:01:32,615][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_EXPORT" ("Table_name" VARCHAR2(255), "Type" VARCHAR2(255), "SourcePath" VARCHAR2(256), "TargetPath" VARCHAR2(256), "SourceColumnName" VARCHAR2(255), "SourceColumnType" VARCHAR2(255), "TargetColumnName" VARCHAR2(255), "TargetColumnType" VARCHAR2(255), "SourceObjectName" VARCHAR2(255), "SourceObjectType" VARCHAR2(255), "TargetObjectName" VARCHAR2(255), "TargetObjectType" VARCHAR2(255), "SourceGroupName" VARCHAR2(255), "SourceGroupType" VARCHAR2(255), "TargetGroupName" VARCHAR2(255), "TargetGroupType" VARCHAR2(255), "SourceResourceName" VARCHAR2(255), "SourceResourceType" VARCHAR2(255), "TargetResourceName" VARCHAR2(255), "TargetResourceType" VARCHAR2(255), "RevisionState" VARCHAR2(50), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 09:01:38,233][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 09:01:41,529][ops.py:132][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00904: "TABLE_NAME": invalid identifier
+[2025-02-06 09:01:44,340][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 09:11:01,284][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 09:11:01,334][ops.py:46][INFO] Non-query executed successfully: DROP TABLE DG_MANTA_LINEAGE_EXPORT
+[2025-02-06 09:11:01,498][ops.py:132][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-00942: table or view does not exist
+[2025-02-06 09:11:01,521][ops.py:31][ERROR] Error executing query: ORA-00942: table or view does not exist
+[2025-02-06 09:11:15,059][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_EXPORT" ("TABLE_NAME" VARCHAR2(255), "TYPE" VARCHAR2(255), "SOURCE_PATH" VARCHAR2(256), "TARGET_PATH" VARCHAR2(256), "SOURCE_COLUMN_NAME" VARCHAR2(255), "SOURCE_COLUMN_TYPE" VARCHAR2(255), "TARGET_COLUMN_NAME" VARCHAR2(255), "TARGET_COLUMN_TYPE" VARCHAR2(255), "SOURCE_OBJECT_NAME" VARCHAR2(255), "SOURCE_OBJECT_TYPE" VARCHAR2(255), "TARGET_OBJECT_NAME" VARCHAR2(255), "TARGET_OBJECT_TYPE" VARCHAR2(255), "SOURCE_GROUP_NAME" VARCHAR2(255), "SOURCE_GROUP_TYPE" VARCHAR2(255), "TARGET_GROUP_NAME" VARCHAR2(255), "TARGET_GROUP_TYPE" VARCHAR2(255), "SOURCE_RESOURCE_NAME" VARCHAR2(255), "SOURCE_RESOURCE_TYPE" VARCHAR2(255), "TARGET_RESOURCE_NAME" VARCHAR2(255), "TARGET_RESOURCE_TYPE" VARCHAR2(255), "REVISION_STATE" VARCHAR2(50), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 09:11:15,709][ops.py:132][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-01843: not a valid month
+[2025-02-06 09:11:15,970][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 09:15:04,109][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 09:15:04,327][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-01843: not a valid month
+[2025-02-06 09:15:04,351][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 09:20:06,985][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 09:20:07,195][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-01843: not a valid month
+[2025-02-06 09:20:07,226][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 09:21:25,908][ops.py:136][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_EXPORT': ORA-01843: not a valid month
+[2025-02-06 09:24:37,867][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 09:24:37,973][ops.py:123][INFO] Inserting 0   2025-02-06 09:24:37.832094
+1   2025-02-06 09:24:37.832094
+2   2025-02-06 09:24:37.832094
+3   2025-02-06 09:24:37.832094
+4   2025-02-06 09:24:37.832094
+5   2025-02-06 09:24:37.832094
+6   2025-02-06 09:24:37.832094
+7   2025-02-06 09:24:37.832094
+8   2025-02-06 09:24:37.832094
+9   2025-02-06 09:24:37.832094
+Name: UPDATE_TIME, dtype: datetime64[ns] 
+[2025-02-06 09:24:38,700][ops.py:133][INFO] Successfully inserted 2178 rows into 'DG_MANTA_LINEAGE_EXPORT'.
+[2025-02-06 09:24:38,838][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_EXPORT WHERE ROWNUM <= 1000
+[2025-02-06 10:08:10,964][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_FLOW_TEST" ("TABLE_NAME" VARCHAR2(255), "FLOW_RAW" VARCHAR2(1028), "RAW_NODE" VARCHAR2(255), "VALUE_OBJECT_TYPE" VARCHAR2(255), "SOURCE_DATABASE_TYPE" VARCHAR2(255), "SOURCE_DATABASE_NAME" VARCHAR2(255), "SCHEMA" VARCHAR2(255), "SOURCE_TABLE_NAME" VARCHAR2(255), "SOURCE_COLUMN_NAME" VARCHAR2(255), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 10:08:11,514][ops.py:135][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_FLOW_TEST': ORA-12899: value too large for column "DTC"."DG_MANTA_LINEAGE_FLOW_TEST"."FLOW_RAW" (actual: 1183, maximum: 1028)
+[2025-02-06 10:08:11,777][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_FLOW_TEST WHERE ROWNUM <= 10
+[2025-02-06 10:09:24,930][ops.py:48][ERROR] Error executing non-query: ORA-00955: name is already used by an existing object
+[2025-02-06 10:09:25,098][ops.py:135][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_FLOW_TEST': ORA-12899: value too large for column "DTC"."DG_MANTA_LINEAGE_FLOW_TEST"."FLOW_RAW" (actual: 1183, maximum: 1028)
+[2025-02-06 10:09:27,639][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_FLOW_TEST WHERE ROWNUM <= 10
+[2025-02-06 10:11:48,182][ops.py:46][INFO] Non-query executed successfully: DROP TABLE DG_MANTA_LINEAGE_FLOW_TEST
+[2025-02-06 10:11:51,990][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_FLOW_TEST" ("TABLE_NAME" VARCHAR2(255), "FLOW_RAW" VARCHAR2(1028), "RAW_NODE" VARCHAR2(255), "VALUE_OBJECT_TYPE" VARCHAR2(255), "SOURCE_DATABASE_TYPE" VARCHAR2(255), "SOURCE_DATABASE_NAME" VARCHAR2(255), "SCHEMA" VARCHAR2(255), "SOURCE_TABLE_NAME" VARCHAR2(255), "SOURCE_COLUMN_NAME" VARCHAR2(255), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 10:11:53,976][ops.py:135][ERROR] Error inserting data into 'DG_MANTA_LINEAGE_FLOW_TEST': ORA-12899: value too large for column "DTC"."DG_MANTA_LINEAGE_FLOW_TEST"."FLOW_RAW" (actual: 1183, maximum: 1028)
+[2025-02-06 10:11:59,584][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_FLOW_TEST WHERE ROWNUM <= 10
+[2025-02-06 10:12:14,926][ops.py:46][INFO] Non-query executed successfully: DROP TABLE DG_MANTA_LINEAGE_FLOW_TEST
+[2025-02-06 10:14:50,576][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_FLOW_TEST" ("TABLE_NAME" VARCHAR2(255), "FLOW_RAW" VARCHAR2(2056), "RAW_NODE" VARCHAR2(255), "VALUE_OBJECT_TYPE" VARCHAR2(255), "SOURCE_DATABASE_TYPE" VARCHAR2(255), "SOURCE_DATABASE_NAME" VARCHAR2(255), "SCHEMA" VARCHAR2(255), "SOURCE_TABLE_NAME" VARCHAR2(255), "SOURCE_COLUMN_NAME" VARCHAR2(255), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 10:14:53,462][ops.py:132][INFO] Successfully inserted 5324 rows into 'DG_MANTA_LINEAGE_FLOW_TEST'.
+[2025-02-06 10:14:56,060][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_FLOW_TEST WHERE ROWNUM <= 10
+[2025-02-06 10:16:44,233][ops.py:46][INFO] Non-query executed successfully: DROP TABLE DG_MANTA_LINEAGE_FLOW_TEST
+[2025-02-06 10:18:01,002][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_FLOW_TEST" ("TABLE_NAME" VARCHAR2(255), "FLOW_RAW" VARCHAR2(2056), "RAW_NODE" VARCHAR2(255), "VALUE_OBJECT_TYPE" VARCHAR2(255), "SOURCE_DATABASE_TYPE" VARCHAR2(255), "SOURCE_DATABASE_NAME" VARCHAR2(255), "SCHEMA" VARCHAR2(255), "SOURCE_TABLE_NAME" VARCHAR2(255), "SOURCE_COLUMN_NAME" VARCHAR2(255), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 10:18:01,628][ops.py:132][INFO] Successfully inserted 5324 rows into 'DG_MANTA_LINEAGE_FLOW_TEST'.
+[2025-02-06 10:18:01,728][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_FLOW_TEST WHERE ROWNUM <= 10
+[2025-02-06 10:40:11,718][ops.py:46][INFO] Non-query executed successfully: DROP TABLE DG_MANTA_LINEAGE_FLOW_TEST
+[2025-02-06 10:42:10,450][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_FLOW_TEST" ("TABLE_NAME" VARCHAR2(255), "FLOW_RAW" VARCHAR2(2056), "RAW_NODE" VARCHAR2(255), "VALUE_OBJECT_TYPE" VARCHAR2(255), "SOURCE_DATABASE_TYPE" VARCHAR2(255), "SOURCE_DATABASE_NAME" VARCHAR2(255), "SCHEMA" VARCHAR2(255), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 10:42:11,057][ops.py:132][INFO] Successfully inserted 5324 rows into 'DG_MANTA_LINEAGE_FLOW_TEST'.
+[2025-02-06 10:42:11,198][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_FLOW_TEST WHERE ROWNUM <= 10
+[2025-02-06 10:42:11,252][ops.py:46][INFO] Non-query executed successfully: DROP TABLE DG_MANTA_LINEAGE_FLOW_TEST
+[2025-02-06 10:42:58,654][ops.py:46][INFO] Non-query executed successfully: CREATE TABLE "DG_MANTA_LINEAGE_FLOW_TEST" ("TABLE_NAME" VARCHAR2(255), "FLOW_RAW" VARCHAR2(2056), "RAW_NODE" VARCHAR2(255), "VALUE_OBJECT_TYPE" VARCHAR2(255), "SOURCE_DATABASE_TYPE" VARCHAR2(255), "SOURCE_DATABASE_NAME" VARCHAR2(255), "SCHEMA" VARCHAR2(255), "UPDATE_TIME" TIMESTAMP)
+[2025-02-06 10:43:01,792][ops.py:132][INFO] Successfully inserted 5324 rows into 'DG_MANTA_LINEAGE_FLOW_TEST'.
+[2025-02-06 10:43:04,365][ops.py:28][INFO] Query executed successfully: SELECT * FROM DG_MANTA_LINEAGE_FLOW_TEST WHERE ROWNUM <= 10

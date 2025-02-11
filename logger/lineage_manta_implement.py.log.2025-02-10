@@ -1,0 +1,159 @@
+[2025-02-10 13:17:04,254][lineage_exploit.py:733][INFO] Optimized table described in 0 seconds
+[2025-02-10 13:17:04,355][lineage_exploit.py:764][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 13:17:04,476][lineage_exploit.py:802][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 13:27:14,798][lineage_exploit.py:733][INFO] Optimized table described in 0 seconds
+[2025-02-10 13:27:14,904][lineage_exploit.py:764][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 13:27:15,020][lineage_exploit.py:802][INFO] Time to build adjacency list: 1 seconds
+[2025-02-10 13:40:29,577][lineage_exploit.py:714][INFO] Optimized table described in 0 seconds
+[2025-02-10 13:40:29,679][lineage_exploit.py:745][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 13:40:29,793][lineage_exploit.py:783][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 13:44:58,349][lineage_exploit.py:714][INFO] Optimized table described in 0 seconds
+[2025-02-10 13:45:03,153][lineage_exploit.py:745][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 13:45:05,991][lineage_exploit.py:783][INFO] Time to build adjacency list: 2 seconds
+[2025-02-10 13:53:00,174][lineage_exploit.py:715][INFO] Optimized table described in 0 seconds
+[2025-02-10 13:53:04,937][lineage_exploit.py:746][INFO] Time to insert a row into hash table optimize in 4 seconds
+[2025-02-10 13:53:07,983][lineage_exploit.py:784][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 13:56:57,351][lineage_exploit.py:718][INFO] Optimized table described in 0 seconds
+[2025-02-10 13:56:57,453][lineage_exploit.py:749][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 13:56:57,567][lineage_exploit.py:787][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 14:04:10,565][lineage_exploit.py:721][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:04:10,665][lineage_exploit.py:752][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 14:04:10,781][lineage_exploit.py:790][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 14:05:29,767][lineage_exploit.py:721][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:05:34,534][lineage_exploit.py:752][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 14:05:37,659][lineage_exploit.py:790][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 14:21:17,361][lineage_exploit.py:713][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:21:22,065][lineage_exploit.py:744][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 14:21:25,135][lineage_exploit.py:782][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 14:25:09,930][lineage_exploit.py:713][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:25:10,036][lineage_exploit.py:744][INFO] Time to insert a row into hash table optimize in 1 seconds
+[2025-02-10 14:25:10,163][lineage_exploit.py:782][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 14:27:29,499][lineage_exploit.py:713][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:27:34,507][lineage_exploit.py:744][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 14:27:37,475][lineage_exploit.py:782][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 14:36:28,985][lineage_exploit.py:713][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:36:29,109][lineage_exploit.py:744][INFO] Time to insert a row into hash table optimize in 1 seconds
+[2025-02-10 14:36:29,230][lineage_exploit.py:782][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 14:52:14,719][lineage_exploit.py:686][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:52:14,821][lineage_exploit.py:717][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 14:52:14,939][lineage_exploit.py:755][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 14:52:15,028][lineage_exploit.py:784][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 14:52:15,036][lineage_exploit.py:820][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 14:55:06,610][lineage_exploit.py:686][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:55:06,718][lineage_exploit.py:717][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 14:55:06,833][lineage_exploit.py:755][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 14:55:06,873][lineage_exploit.py:784][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 14:55:06,875][lineage_exploit.py:820][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 14:57:01,651][lineage_exploit.py:686][INFO] Optimized table described in 0 seconds
+[2025-02-10 14:57:06,392][lineage_exploit.py:717][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 14:57:09,486][lineage_exploit.py:755][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 14:58:01,209][lineage_exploit.py:784][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 14:58:02,216][lineage_exploit.py:820][INFO] Time to create DataFrame from graph: 1 seconds
+[2025-02-10 15:02:38,433][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:02:43,651][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 15:02:46,791][lineage_exploit.py:759][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 15:03:42,880][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:03:43,793][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 1 seconds
+[2025-02-10 15:13:11,982][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:13:17,607][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 15:13:20,776][lineage_exploit.py:759][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 15:14:15,265][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:14:16,106][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 1 seconds
+[2025-02-10 15:14:17,792][lineage_exploit.py:847][INFO] Time taken to update DataFrame: 1 seconds
+[2025-02-10 15:19:47,380][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:19:52,341][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 15:19:55,202][lineage_exploit.py:759][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 15:20:47,847][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:20:48,703][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 1 seconds
+[2025-02-10 15:20:50,443][lineage_exploit.py:847][INFO] Time taken to update DataFrame: 2 seconds
+[2025-02-10 15:24:37,500][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:24:42,638][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 15:24:45,690][lineage_exploit.py:759][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 15:25:37,547][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:25:38,393][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 1 seconds
+[2025-02-10 15:25:40,089][lineage_exploit.py:847][INFO] Time taken to update DataFrame: 2 seconds
+[2025-02-10 15:38:00,480][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:38:05,537][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 5 seconds
+[2025-02-10 15:38:08,538][lineage_exploit.py:759][INFO] Time to build adjacency list: 3 seconds
+[2025-02-10 15:38:56,818][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:38:57,647][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 1 seconds
+[2025-02-10 15:38:59,380][lineage_exploit.py:847][INFO] Time taken to update DataFrame: 2 seconds
+[2025-02-10 15:48:04,106][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:48:04,223][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 15:48:04,363][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 15:48:04,444][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:48:04,452][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 15:48:04,489][lineage_exploit.py:847][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 15:49:44,590][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:49:44,703][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 15:49:44,844][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 15:49:44,886][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:49:44,888][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 15:49:44,890][lineage_exploit.py:847][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 15:50:30,638][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:50:30,738][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 15:50:30,854][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 15:50:30,924][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:50:30,925][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 15:50:30,927][lineage_exploit.py:847][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 15:51:49,061][lineage_exploit.py:690][INFO] Optimized table described in 1 seconds
+[2025-02-10 15:51:49,162][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 15:51:49,281][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 15:53:45,550][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 15:53:45,651][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 15:53:45,768][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 15:53:45,808][lineage_exploit.py:788][INFO] Time to create full flow from graph: 0 seconds
+[2025-02-10 15:53:45,812][lineage_exploit.py:824][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:07:09,601][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:07:09,706][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:07:09,834][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 16:07:09,875][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:07:09,877][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:12:17,716][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:12:17,820][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:12:17,943][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 16:12:17,986][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:12:17,988][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:12:17,990][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 16:15:13,889][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:15:13,995][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:15:14,109][lineage_exploit.py:759][INFO] Time to build adjacency list: 1 seconds
+[2025-02-10 16:15:14,193][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:15:14,266][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:15:14,302][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 16:18:36,181][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:18:36,305][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:18:36,428][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 16:18:36,516][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:18:36,523][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:18:36,559][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 16:20:53,422][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:20:53,544][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:20:53,670][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 16:20:53,754][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:20:53,761][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:20:53,798][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 16:26:20,741][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:26:20,845][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:26:20,959][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 16:26:21,039][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:26:21,107][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:26:21,143][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 16:32:48,764][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:32:48,867][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:32:48,982][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 16:32:49,066][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:32:49,073][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:32:49,113][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 16:37:40,611][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:37:40,736][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:37:40,861][lineage_exploit.py:759][INFO] Time to build adjacency list: 0 seconds
+[2025-02-10 16:37:40,952][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:37:40,960][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:37:40,998][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
+[2025-02-10 16:59:50,887][lineage_exploit.py:690][INFO] Optimized table described in 0 seconds
+[2025-02-10 16:59:50,998][lineage_exploit.py:721][INFO] Time to insert a row into hash table optimize in 0 seconds
+[2025-02-10 16:59:51,144][lineage_exploit.py:759][INFO] Time to build adjacency list: 1 seconds
+[2025-02-10 16:59:51,263][lineage_exploit.py:792][INFO] Time to create full flow from graph: 0.00000 seconds
+[2025-02-10 16:59:51,274][lineage_exploit.py:829][INFO] Time to create DataFrame from graph: 0 seconds
+[2025-02-10 16:59:51,326][lineage_exploit.py:852][INFO] Time taken to update DataFrame: 0 seconds
