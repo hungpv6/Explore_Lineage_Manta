@@ -1,0 +1,79 @@
+CREATE OR REPLACE FUNCTION SPLIT_STRING (
+    p_string IN VARCHAR2,
+    p_delimiter IN VARCHAR2
+) RETURN SYS.ODCIVARCHAR2LIST IS
+    l_string SYS.ODCIVARCHAR2LIST := SYS.ODCIVARCHAR2LIST();
+    l_idx PLS_INTEGER;
+BEGIN
+    l_idx := 1;
+    WHILE l_idx <= LENGTH(p_string) LOOP
+        l_string.EXTEND;
+        l_string(l_string.COUNT) := SUBSTR(p_string, l_idx, INSTR(p_string || p_delimiter, p_delimiter, l_idx) - l_idx);
+        l_idx := INSTR(p_string || p_delimiter, p_delimiter, l_idx) + LENGTH(p_delimiter);
+    END LOOP;
+    RETURN l_string;
+END SPLIT_STRING;
+/
+CREATE OR REPLACE TYPE lineage_manta_flow_rec AS OBJECT (
+    TABLE_NAME_CSV VARCHAR2(255),
+    NODE_OBJECT VARCHAR2(255),
+    NODE_RELATED VARCHAR2(255),
+    VALUE_OBJECT_TYPE VARCHAR2(255),
+    COLUMN_NAME_OBJECT VARCHAR2(255),
+    TABLE_NAME_NODE_OBJECT VARCHAR2(255),
+    SOURCE_DATABASE_TYPE VARCHAR2(255),
+    SOURCE_DATABASE_NAME VARCHAR2(255),
+    SCHEMA_OBJECT VARCHAR2(255),
+    NODE_RELATED_COLUMN VARCHAR2(255),
+    NODE_RELATED_TABLE VARCHAR2(255),
+    UPDATE_TIME TIMESTAMP,
+    FLOW_RAW VARCHAR2(2056)  -- Giữ nguyên cột FLOW_RAW ban đầu
+);
+CREATE OR REPLACE FUNCTION GET_COLUMNS_WITH_SPECIFIC_CONDITION_FUNCTION (
+    find_value IN VARCHAR2,
+    find_table IN VARCHAR2
+) RETURN lineage_manta_flow_table PIPELINED
+AS
+    l_flow_values SYS.ODCIVARCHAR2LIST;  -- Danh sách chứa các giá trị tách ra từ FLOW_RAW
+    l_related_values SYS.ODCIVARCHAR2LIST;  -- Danh sách chứa các giá trị tách ra từ NODE_RELATED
+BEGIN
+    FOR rec IN (
+        SELECT COLUMN_NAME_OBJECT, FLOW_RAW, NODE_OBJECT, VALUE_OBJECT_TYPE, 
+               SOURCE_DATABASE_TYPE, SOURCE_DATABASE_NAME, SCHEMA_OBJECT, UPDATE_TIME,
+               TABLE_NAME_CSV, TABLE_NAME_NODE_OBJECT  -- Thêm các cột cần thiết
+        FROM LINEAGE_MANTA_FLOW_MAIN 
+        WHERE TABLE_NAME_NODE_OBJECT = find_table AND COLUMN_NAME_OBJECT = find_value
+    ) LOOP
+        -- Tách các giá trị trong FLOW_RAW
+        l_flow_values := SPLIT_STRING(rec.FLOW_RAW, ' ==> ');
+
+        -- Trả về từng giá trị tách ra cùng với các thông tin khác
+        FOR i IN 1 .. l_flow_values.COUNT LOOP
+            -- Tách các giá trị liên quan từ l_flow_values(i)
+            l_related_values := SPLIT_STRING(l_flow_values(i), '.');
+
+            -- Kiểm tra số lượng phần tử trong l_related_values
+            PIPE ROW (lineage_manta_flow_rec(
+                rec.TABLE_NAME_CSV,  -- Thêm cột TABLE_NAME_CSV
+                rec.NODE_OBJECT, 
+                l_flow_values(i),  -- Giá trị tách ra từ FLOW_RAW
+                rec.VALUE_OBJECT_TYPE, 
+                rec.COLUMN_NAME_OBJECT,
+                rec.TABLE_NAME_NODE_OBJECT,
+                rec.SOURCE_DATABASE_TYPE, 
+                rec.SOURCE_DATABASE_NAME, 
+                rec.SCHEMA_OBJECT, 
+                CASE WHEN l_related_values.COUNT > 0 THEN l_related_values(l_related_values.COUNT) ELSE NULL END,  -- NODE_RELATED_COLUMN
+                CASE WHEN l_related_values.COUNT > 1 THEN l_related_values(l_related_values.COUNT - 1) ELSE NULL END,  -- NODE_RELATED_TABLE
+                rec.UPDATE_TIME,  -- Giữ nguyên cột UPDATE_TIME
+                rec.FLOW_RAW  -- Giữ nguyên cột FLOW_RAW ban đầu
+            ));
+        END LOOP;
+    END LOOP;
+
+    RETURN;
+END;
+/
+
+SELECT FLOW_RAW
+FROM TABLE(GET_COLUMNS_WITH_SPECIFIC_CONDITION_FUNCTION('REF_NO','TF_CREDIT'));

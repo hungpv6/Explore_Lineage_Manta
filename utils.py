@@ -114,19 +114,29 @@ def transfrom_column_name_before_create_table(df):
     - df (pd.DataFrame): Input DataFrame
     """
     try:
+
         column_name_dict = {
             "Root_ID": "ROOT_ID",
             "Step_Node": "STEP_NODE",
             "Flow": "FLOW",
             "Node": "NODE",
             "Flow_implement_raw": "FLOW_RAW",
-            "Raw_Node": "RAW_NODE",
+            "Raw_Node": "NODE_OBJECT",
+            'table_name_extract': 'TABLE_NAME_NODE_OBJECT',
             'ValueObjectType': 'VALUE_OBJECT_TYPE',
             'database_type': 'SOURCE_DATABASE_TYPE',
             'database_name': 'SOURCE_DATABASE_NAME',
-            'schema': 'SCHEMA',
+            'schema': 'SCHEMA_OBJECT',
             'source_table_name': 'SOURCE_TABLE_NAME',
-            "Table_name": "TABLE_NAME",
+            'column_name_relations': 'COLUMN_NAME_RELATIONS',
+            'table_name_relations':'TABLE_NAME_RELATIONS',
+            'unpivoted_column': 'NODE_RELATIONS',
+            'database_type_relations': 'DATABASE_RELATIONS_NODE_TYPE',
+            'database_name_relations': 'DATABASE_RELATIONS_NODE_NAME',
+            'schema_relations': 'SCHEMA_RELATIONS_NODE',
+
+
+            "Table_name": "TABLE_NAME_CSV",
             "Type": "TYPE",
             "column_name":"COLUMN_NAME_OBJECT",
             "SourcePath": "SOURCE_PATH",

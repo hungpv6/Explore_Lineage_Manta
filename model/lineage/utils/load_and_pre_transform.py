@@ -239,7 +239,7 @@ class PreProcessingData:
             result_dict[i].append(list_transform[i])
         return result_dict
     
-    def unpivoted_column(self, table, column_unpivoted, change_column_data_type = int):
+    def unpivoted_column(self, df, column_unpivoted, unpivoted_column_name = 'unpivoted_column', change_column_data_type = str, character_split = ','):
         """
         Unpivots a specified column in a DataFrame, converting it into separate rows.
 
@@ -265,7 +265,10 @@ class PreProcessingData:
         """
 
         try:
-            df_unpivoted = table.explode(column_unpivoted).reset_index(drop=True)
+            if isinstance(column_unpivoted, str):
+                df[unpivoted_column_name] = df[column_unpivoted].str.split(character_split)
+
+            df_unpivoted = df.explode(unpivoted_column_name).reset_index(drop=True)
             df_unpivoted[column_unpivoted] = df_unpivoted[column_unpivoted].astype(change_column_data_type)
             return df_unpivoted
         except Exception as e:
